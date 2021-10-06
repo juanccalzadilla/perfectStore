@@ -1,11 +1,15 @@
 import React from 'react'
-import { Carrousel } from './components/FrontPage/Carrousel'
+import { Background } from './components/FrontPage/Background'
+// import { Carrousel } from './components/FrontPage/Carrousel'
+import { Products } from './components/FrontPage/Products'
 
 
 export const Home = () => {
     return (
         <div>
-            <Carrousel/>
+            <Background/>
+            {/* <Carrousel/> */}
+            <Products/>
         </div>
     )
 }

@@ -4,15 +4,16 @@ export const data = [{
     "id": 1,
     "product_name": "Pie Shell - 9",
     "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
-    "description": "Turbinectomy NEC",
-    "price": "54,20"
-  }, {
+    "description": "Turbinectomy",
+    "price": "54,20"},
+   {
     "id": 2,
-    "product_name": "Flour - Teff",
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
+   "product_name": "Flour - Teff",
+   "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
     "description": "Leg vein resect/anastom",
     "price": "34,98"
-  }, {
+  }, 
+  {
     "id": 3,
     "product_name": "Nori Sea Weed - Gold Label",
     "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
@@ -48,16 +49,5 @@ export const data = [{
     "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
     "description": "Suture of artery",
     "price": "65,98"
-  }, {
-    "id": 9,
-    "product_name": "Beef - Tenderloin",
-    "img": "http://dummyimage.com/200x200.png/5fa2dd/ffffff",
-    "description": "Cl fx reduc-toe",
-    "price": "54,08"
-  }, {
-    "id": 10,
-    "product_name": "Lettuce - Lambs Mash",
-    "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
-    "description": "Repair of thymus",
-    "price": "66,13"
-  }]
+  }
+]

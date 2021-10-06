@@ -20,6 +20,7 @@ a {
 }
 ul,p{
     margin: 0;
+    padding: 0;
 
 }
 p{
@@ -32,7 +33,7 @@ p{
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color:#7D1740;
+    /* background-color:#7D1740; */
 }
 
 .hamburger {
@@ -59,12 +60,12 @@ p{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #ffffff;
+    background-color: #000000;
 }
 .nav-menu {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -75,24 +76,26 @@ p{
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: #000000;
 }
 
 .nav-link:hover{
-    color: #482ff7;
+   color: #e0e0e0
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: white;
+    color: rgb(0, 0, 0);
+    margin-left: 20rem;
+    text-align: center;
 }
 .car {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -110,7 +113,7 @@ p{
     flex-direction: column;
 }
 .size{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -138,10 +141,14 @@ p{
 }
 
 .icon{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
+.price{
+    font-size: 10px;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -167,6 +174,9 @@ p{
     .nav-item {
         margin: 2.5rem 0;
     }
+    .nav-link{
+        color: black;
+    }
 
     .hamburger {
         display: block;
@@ -182,6 +192,9 @@ p{
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-logo{
+        margin-left: 2rem;
     }
 
 }

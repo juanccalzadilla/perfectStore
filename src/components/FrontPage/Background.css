@@ -1,0 +1,40 @@
+.image{
+    max-height: 94vh;
+   
+}
+
+
+.bg{
+    background-color: #fcfcfc;
+}
+
+@media only screen and (max-width: 768px){
+    .w{
+        width:15rem;
+    }
+    
+}
+
+.card-container{
+    padding-left:0;
+   box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 5%);
+   border-radius: 10px;
+   padding:1rem;
+   width:422px;
+   justify-content:center;
+   align-items:center;
+}
+
+.margin{
+    justify-content:center;
+}
+
+.info{
+    width:100%;
+    padding:1rem;
+}
+
+.info h3{
+    text-align: center;
+}
+
