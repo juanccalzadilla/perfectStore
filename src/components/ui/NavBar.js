@@ -11,14 +11,12 @@ export const NavBar = () => {
     setActiveCar(false)
   }
   const [activeCar, setActiveCar] = useState(false)
-const {eventos} = useSelector(state => state.shoppingCart)
+  const { eventos } = useSelector(state => state.shoppingCart)
   const openCar = () => {
     setActiveCar(!activeCar)
     setActive(false)
   }
 
-  const event = eventos.map(event => console.log(event))
-  console.log(event)
   return (
     <nav className='navbar'>
 
@@ -36,7 +34,7 @@ const {eventos} = useSelector(state => state.shoppingCart)
 
               {(eventos.length > 0) ? <div className='container content'>
                 {eventos.map(eventos => (
-                  <NavItem eventos={eventos} key={eventos.id} />
+                  <NavItem eventos={eventos} key={eventos.product_name} />
                 ))}
                 <span className="btn btn-danger w-100 mb-3">TOTAL 100</span>
               </div> : <h1 className="text-center">Carrito Vacio</h1>}

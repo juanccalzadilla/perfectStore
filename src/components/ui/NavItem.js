@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const NavItem = ({eventos}) => {
+
     return (
         <div key={eventos.id}>
             <h3 className='mt-3 text-center'>{eventos.product_name}</h3>

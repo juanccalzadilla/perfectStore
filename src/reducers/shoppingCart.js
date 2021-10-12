@@ -1,7 +1,7 @@
 import { types } from "../types/types"
 
 const initialState ={
-    eventos: [],
+    eventos: []
 }
 export const shoppingCart = (state = initialState, action) => {
 
