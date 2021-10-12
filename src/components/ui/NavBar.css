@@ -8,7 +8,8 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Italianno', sans-serif;
+    font-family: var(--principal-font);
+
 }
 
 li {
@@ -89,7 +90,7 @@ p{
     color: var(--main-color);
     margin-left: 20rem;
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: var(--principal-font);
 }
 .car {
     position: fixed;

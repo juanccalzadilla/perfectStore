@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 :root{
+    /* COLORS */
     --main-color:#911035;
+
+    /* STYLES */
+    --principal-font:'Italianno', sans-serif;
+    --second-font:'PT Sans', sans-serif;
+
+    /* TEXT SIZES */
+
+
+    --text-1: 2rem;
+    --text-2: 3rem;
 }

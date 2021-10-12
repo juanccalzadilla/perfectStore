@@ -39,8 +39,11 @@
 
 .text{
     color: var(--main-color);
-    font-family: 'Italianno', cursive;
+    font-family: var(--principal-font);
     font-size: 2.6rem;
+}
+.txt{
+    font-family: var(--second-font);
 }
 
 @media only screen and (max-width: 768px) {

@@ -1,9 +1,15 @@
 import React from 'react'
 import { data } from '../../data'
+import {useDispatch} from 'react-redux'
+import { filterByID } from '../../helpers/filterByID';
+import { addNewItem } from '../../actions/cart-actions';
 
 export const Products = () => {
+    const dispatch = useDispatch()
+
     const handleAddCart = (id)=> {
-        console.log(id);
+
+       dispatch(addNewItem(filterByID(id))) ;
     }
     return (
         <>
@@ -13,7 +19,7 @@ export const Products = () => {
                 justify-content-center">
                     {data.map(data => (
                         
-                        <div className="card-container d-flex flex-column m-4" key={data.id} >
+                        <div className="card-container d-flex txt flex-column m-4" key={data.id} >
                             <img src={data.img} alt={data.name}  className="img-fluid w-50" />
                             <div className="info">
                                 <h3>{data.product_name}</h3>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { data } from '../../data'
+import { useSelector } from 'react-redux'
+// import { data } from '../../data'
 import './NavBar.css'
 import { NavItem } from './NavItem'
 export const NavBar = () => {
@@ -10,22 +11,21 @@ export const NavBar = () => {
     setActiveCar(false)
   }
   const [activeCar, setActiveCar] = useState(false)
-
+const {eventos} = useSelector(state => state.shoppingCart)
   const openCar = () => {
     setActiveCar(!activeCar)
     setActive(false)
   }
 
-
-
-
+  const event = eventos.map(event => console.log(event))
+  console.log(event)
   return (
     <nav className='navbar'>
 
       <div className="navbar-2">
         <div className="car-burger">
           <div href="/" className="cart" onClick={openCar}>
-            <span id="cart_menu_num" data-action="cart-can" className="badge rounded-circle">{data.length || 0}</span>
+            <span id="cart_menu_num" data-action="cart-can" className="badge rounded-circle">{eventos.length || 0}</span>
             <i className="fas fa-shopping-bag icon"></i>
           </div>
           <div className={activeCar ? 'car active' : 'car'}>
@@ -33,18 +33,19 @@ export const NavBar = () => {
             {/* PRODUCTSS----------------------------------------------------------------- */}
             <div className={activeCar ? 'nav-menu active scroll' : 'nav-menu scroll'}>
               {/* Product start--------------------------------------------------------------------------------------- */}
-              
-              {(data.length > 0) ? <div className='container content'>
-                {data.map(data => (
-                  <NavItem data={data} key={data.id}/>
+
+              {(eventos.length > 0) ? <div className='container content'>
+                {eventos.map(eventos => (
+                  <NavItem eventos={eventos} key={eventos.id} />
                 ))}
                 <span className="btn btn-danger w-100 mb-3">TOTAL 100</span>
-              </div> : <h1>Carrito Vacio</h1>}
+              </div> : <h1 className="text-center">Carrito Vacio</h1>}
               {/* -------------------Product end */}
             </div>
           </div>
 
         </div>
+
       </div>
 
       {/* LOGO START----------------- */}
